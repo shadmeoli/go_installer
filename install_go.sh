@@ -3,16 +3,16 @@
 # Function to add Go-related environment variables to shell configuration
 add_to_path() {
   # Prompt for shell type
-  read -p "Enter your shell type (zsh/bash): " shell_type
+  shell_type=$SHELL
 
   # Check user input and proceed accordingly
   case "$shell_type" in
-    "zsh")
+    "/usr/bin/zsh")
       echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.zshrc
       echo 'export GOROOT="/usr/local/go"' >> ~/.zshrc
       echo 'export GOPATH="$HOME/go"' >> ~/.zshrc
       ;;
-    "bash")
+    "/usr/bin/bash")
       echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.bashrc
       echo 'export GOROOT="/usr/local/go"' >> ~/.bashrc
       echo 'export GOPATH="$HOME/go"' >> ~/.bashrc
