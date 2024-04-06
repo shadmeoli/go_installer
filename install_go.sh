@@ -24,8 +24,9 @@ add_to_path() {
   esac
 }
 
-# Download the latest Go release and install it
-latest_go_version=$(curl -s https://golang.org/VERSION?m=text)
+# Function to install and set up Go
+install_go() {
+  latest_go_version=$(curl -s https://golang.org/VERSION?m=text)
 if wget -q "https://dl.google.com/go/$latest_go_version.linux-amd64.tar.gz"; then
   # Extract the downloaded Go release to /usr/local
   sudo tar -C /usr/local -xzf "$latest_go_version.linux-amd64.tar.gz"
@@ -72,4 +73,11 @@ if wget -q "https://dl.google.com/go/$latest_go_version.linux-amd64.tar.gz"; the
   # Error message if download fails
   echo -e "${RED}[!!] There was an error downloading the latest Go release.${NC}"
 fi
+}
 
+# Check for options
+if [ "$1" == "--setup" ]; then
+  install_go
+else
+  echo "Usage: $0 [--setup] to install and setup Go."
+fi

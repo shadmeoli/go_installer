@@ -10,5 +10,5 @@ The Go Installer Script automates the process of downloading and installing the 
 To install Go using the installer script, run the following command in your terminal:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/shadmeoli/go_installer/main/install_go.sh | bash
+curl -sSL https://raw.githubusercontent.com/shadmeoli/go_installer/main/install_go.sh | bash -s -- --setup
 ```
