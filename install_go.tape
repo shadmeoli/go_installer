@@ -62,7 +62,7 @@ Set Theme { "name": "Whimsy", "black": "#535178", "red": "#ef6487", "green": "#5
 Require echo
 
 Set Shell "bash"
-Set FontSize 20
+Set FontSize 24
 Set Width 1200
 Set Height 600
 
@@ -72,6 +72,5 @@ Ctrl+C
 Ctrl+L
 Type "source ~/.zshrc"
 Ctrl+C
-
 
 Sleep 5s
