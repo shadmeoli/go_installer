@@ -62,7 +62,7 @@ Set Theme { "name": "Whimsy", "black": "#535178", "red": "#ef6487", "green": "#5
 Require echo
 
 Set Shell "bash"
-Set FontSize 14
+Set FontSize 20
 Set Width 1200
 Set Height 600
 
