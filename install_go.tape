@@ -67,7 +67,7 @@ Set Width 1200
 Set Height 600
 
 Type "# macOS and linux" Sleep 500ms Enter
-Type "curl -sSL https://raw.githubusercontent.com/shadmeoli/go_installer/master/install_go.sh | bash -s -- --setup" Sleep 800ms Enter
+Type "curl -sSL https://raw.githubusercontent.com/shadmeoli/go_installer/master/install_go.sh | bash -s -- --setup" Sleep 2000ms Enter
 Ctrl+L
 Type "source ~/.zshrc"
 Ctrl+C
