@@ -25,7 +25,7 @@ add_to_path() {
 # Function to install and set up Go
 install_go() {
   # Get the latest Go version
-  latest_go_version=$(curl -s 'https://golang.org/VERSION?m=text')
+  latest_go_version=$(curl -s 'https://go.dev/VERSION?m=text')
   
   if wget -q "https://dl.google.com/go/${latest_go_version}.linux-amd64.tar.gz"; then
     # Extract the downloaded Go release to /usr/local
